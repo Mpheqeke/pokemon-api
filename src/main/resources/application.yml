@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: DEBUG
+
+
+pokemonapi:
+  baseUrl: 'https://pokeapi.co/api/v2'
+  limit: '100'
+  offset: '0'
