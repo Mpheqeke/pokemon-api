@@ -1,7 +1,6 @@
 package com.technical.assesment.pokemonapi.configuration;
 
 import io.micrometer.core.instrument.MeterRegistry;
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;
@@ -13,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class ApplicationConfiguration {
 
-    private ApplicationConfigurationProperties properties;
+    private final ApplicationConfigurationProperties properties;
 
     @Autowired
     public ApplicationConfiguration( ApplicationConfigurationProperties properties ) {
@@ -26,7 +25,7 @@ public class ApplicationConfiguration {
     }
 
     @Bean
-    public MeterRegistryCustomizer<MeterRegistry> metericCommonTags() {
+    public MeterRegistryCustomizer<MeterRegistry> metricsCommonTags() {
         return registry -> registry.config().commonTags("Application", "pokemonapi");
     }
 
