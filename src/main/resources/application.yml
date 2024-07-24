@@ -7,6 +7,6 @@ logging:
 
 
 pokemonapi:
-  baseUrl: 'https://pokeapi.co/api/v2'
-  limit: '100'
-  offset: '0'
+  baseUrl: 'https://pokeapi.co/api/v2/pokemon'
+  limit: 'limit=10'
+  offset: 'offset=0'

@@ -27,7 +27,7 @@ public class DashboardController {
         List<PokemonListDto> pokemonList = dashboardService.getPokemonList();
 
         if (pokemonList.isEmpty()){
-            ErrorDetailsDto errorDetailsDto = new ErrorDetailsDto( "Error occcured ","Pokemon api returned nothing",LocalDateTime.now());
+            ErrorDetailsDto errorDetailsDto = new ErrorDetailsDto( "Error occurred ","Pokemon api returned nothing",LocalDateTime.now());
             return new ResponseEntity<>(errorDetailsDto, HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(pokemonList, HttpStatus.OK);
