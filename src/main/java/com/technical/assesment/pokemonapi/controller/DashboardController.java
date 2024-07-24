@@ -39,7 +39,7 @@ public class DashboardController {
             PokemonDetailsDto pokemonDetailsDto = dashboardService.getPokemonDetails(identifier);
             return new ResponseEntity<>(pokemonDetailsDto, HttpStatus.OK);
         } catch (PokemonNotFoundException exception) {
-            ErrorDetailsDto errorDetailsDto = new ErrorDetailsDto( exception.getMessage() ,"Pokemon " + identifier + "not found" ,LocalDateTime.now());
+            ErrorDetailsDto errorDetailsDto = new ErrorDetailsDto( exception.getMessage() ,"Pokemon " + identifier + " not found" ,LocalDateTime.now());
             return new ResponseEntity<>(errorDetailsDto, HttpStatus.NOT_FOUND);
         }
     }

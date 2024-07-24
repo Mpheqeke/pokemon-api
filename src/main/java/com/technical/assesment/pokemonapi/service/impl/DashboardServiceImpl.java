@@ -96,7 +96,7 @@ public class DashboardServiceImpl implements DashboardService {
              return pokemonDetailsDto;
 
         } catch (HttpClientErrorException exception) {
-            throw new PokemonNotFoundException("Pokemon not found with name: " + identifier + " cause" + exception.getMessage());
+            throw new PokemonNotFoundException("Pokemon not found with name: " + identifier + " cause " + exception.getMessage());
         }
     }
 }
