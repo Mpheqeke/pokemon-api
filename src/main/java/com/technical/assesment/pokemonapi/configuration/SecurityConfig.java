@@ -16,7 +16,7 @@ public class SecurityConfig {
 
     private final Environment environment;
 
-    public SecurityConfig(final  Environment environment) {
+    public SecurityConfig(final Environment environment) {
         this.environment = environment;
     }
 

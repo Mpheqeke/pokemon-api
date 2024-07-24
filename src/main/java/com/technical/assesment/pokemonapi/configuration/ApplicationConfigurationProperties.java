@@ -14,7 +14,7 @@ public class ApplicationConfigurationProperties {
     private String pokemonBaseUrl;
 
     @Value("${pokemonapi.limit}")
-    private String  limit;
+    private String limit;
 
     @Value("${pokemonapi.offset}")
     private String offset;

@@ -15,7 +15,7 @@ public class ApplicationConfiguration {
     private final ApplicationConfigurationProperties properties;
 
     @Autowired
-    public ApplicationConfiguration( ApplicationConfigurationProperties properties ) {
+    public ApplicationConfiguration(ApplicationConfigurationProperties properties) {
         this.properties = properties;
     }
 
