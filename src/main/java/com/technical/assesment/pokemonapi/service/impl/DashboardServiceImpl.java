@@ -26,7 +26,7 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<PokemonDetailsDto> getPokemonDetails() {
+    public PokemonDetailsDto getPokemonDetails(String identifier) {
         return null;
     }
 }

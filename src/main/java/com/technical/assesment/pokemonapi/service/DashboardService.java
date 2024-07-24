@@ -9,5 +9,5 @@ public interface DashboardService {
 
     List<PokemonListDto> getPokemonList();
 
-    List<PokemonDetailsDto> getPokemonDetails();
+    PokemonDetailsDto getPokemonDetails(String identifier);
 }
