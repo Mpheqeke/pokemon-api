@@ -4,3 +4,9 @@ server:
 logging:
   level:
     root: DEBUG
+
+
+pokemonapi:
+  baseUrl: 'https://pokeapi.co/api/v2/pokemon'
+  limit: 'limit=10'
+  offset: 'offset=0'
