@@ -74,7 +74,7 @@ class DashboardControllerTest {
         pokemonDetails.setWeight(60);
         pokemonDetails.setBaseExperience(112);
         pokemonDetails.setMove("thunder-shock");
-        pokemonDetails.setSpecie("pikachu");
+        pokemonDetails.setSpecies("pikachu");
         pokemonDetails.setSprite("https://example.com/sprite.png");
 
         when(dashboardService.getPokemonDetails(anyString())).thenReturn(pokemonDetails);
@@ -88,7 +88,7 @@ class DashboardControllerTest {
                 .andExpect(jsonPath("$.weight", is(60)))
                 .andExpect(jsonPath("$.baseExperience", is(112)))
                 .andExpect(jsonPath("$.move", is("thunder-shock")))
-                .andExpect(jsonPath("$.specie", is("pikachu")))
+                .andExpect(jsonPath("$.species", is("pikachu")))
                 .andExpect(jsonPath("$.sprite", is("https://example.com/sprite.png")));
     }
 

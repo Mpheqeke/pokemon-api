@@ -87,8 +87,8 @@ public class DashboardServiceImpl implements DashboardService {
              }
              pokemonDetailsDto.setStats(pokemonStatDtoList);
 
-             Map pokemonSpecieData = (Map) response.get("species");
-             pokemonDetailsDto.setSpecie((String) pokemonSpecieData.get("name"));
+             Map pokemonSpeciesData = (Map) response.get("species");
+             pokemonDetailsDto.setSpecies((String) pokemonSpeciesData.get("name"));
 
              Map sprites = (Map) response.get("sprites");
              pokemonDetailsDto.setSprite((String) sprites.get("front_default"));

@@ -10,3 +10,12 @@ pokemonapi:
   baseUrl: 'https://pokeapi.co/api/v2/pokemon'
   limit: 'limit=10'
   offset: 'offset=0'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      cors:
+        allowed-origins: '*'
+        allowed-origin-patterns: '*'

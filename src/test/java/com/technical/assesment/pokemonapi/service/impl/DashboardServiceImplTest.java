@@ -119,7 +119,7 @@ class DashboardServiceImplTest {
         assertEquals("thunder-shock", pokemonDetails.getMove());
         assertEquals("speed", pokemonDetails.getStats().get(0).getName());
         assertEquals(90, pokemonDetails.getStats().get(0).getLevel());
-        assertEquals("pikachu", pokemonDetails.getSpecie());
+        assertEquals("pikachu", pokemonDetails.getSpecies());
         assertEquals("https://example.com/sprite.png", pokemonDetails.getSprite());
     }
 

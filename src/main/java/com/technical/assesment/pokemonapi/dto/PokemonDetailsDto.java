@@ -19,7 +19,7 @@ public class PokemonDetailsDto {
 
     private String name;
     private String sprite;
-    private String specie;
+    private String species;
     private String move;
     private List<PokemonStatDto> stats;
 
